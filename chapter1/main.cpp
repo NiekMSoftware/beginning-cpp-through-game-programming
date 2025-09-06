@@ -88,7 +88,19 @@ static void game_stats_02() {
 }
 
 static void game_stats_03() {
-	
+	const int ALIEN_POINTS = 150;
+	int aliensKilled = 10;
+	int score = aliensKilled * ALIEN_POINTS;
+	std::cout << "score: " << score << std::endl;
+
+	enum difficulty { NOVICE, EASY, NORMAL, HARD, UNBEATABLE };
+	difficulty myDifficulty;
+
+	enum shipCost { FIGHTER_COST = 25, BOMBER_COST, CRUISER_COST = 50 };
+	shipCost myShipCost = BOMBER_COST;
+
+	std::cout << "\nTo upgrade my ship to a Cruiser will cost "
+		<< (CRUISER_COST - myShipCost) << " Resource Points.\n";
 }
 
 int main() {
@@ -96,6 +108,6 @@ int main() {
 	//expensive_calculator();
 	//game_stats_01();
 	//game_stats_02();
-
+	game_stats_03();
 	return 0;
 }
