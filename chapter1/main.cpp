@@ -167,6 +167,16 @@ static void exercise_01() {
 	const int HPZ = 1;  // unclear
 }
 
+static void exercise_02() {
+	using std::cout;
+	using std::endl;
+
+	// what's displayed by each line in the following code snippet?
+	cout << "Seven divided by three is " << 7 / 3 << endl;  // will return 2, cannot divide integrals literals
+	cout << "Seven divided by three is " << 7.0 / 3 << endl;  // will return a floating point literal
+	cout << "Seven divided by three is " << 7.0 / 3.0 << endl;  // will also still return a floating point literal
+}
+
 int main() {
 	//game_over();
 	//expensive_calculator();
