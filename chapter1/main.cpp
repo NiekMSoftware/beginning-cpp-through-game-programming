@@ -1,8 +1,9 @@
-// Chapter 1 with all the examples
+// Chapter 1 with all the examples and exercises
 
 #include <iostream>
 #include <string>
 
+// == examples
 static void game_over() {
 	std::cout << "Game Over!" << std::endl;
 }
@@ -147,6 +148,24 @@ static void lost_fortune() {
 	cout << leader << " held on to the extra " << (GOLD_PIECES % survivors);
 	cout << " pieces to keep things fair of course.\n";
 }
+// ==
+
+// == exercises
+static void exercise_01() {
+	// create a list of 6 
+	// legal variable names - three good choices and three bad choices
+	// explain why each name falls into the good or bad category
+
+	// good variable names (clear, descriptive, follow conventions)
+	float playerHealth;  // clear to get the player health
+	int ogresKilled;	 // easy to track
+	const unsigned short CLOAK_VALUE = 15;  // descriptive
+
+	// bad variable names (unclear, vague, misleading)
+	int x; // too vague for important logic
+	int thingy; // non-descriptive
+	const int HPZ = 1;  // unclear
+}
 
 int main() {
 	//game_over();
@@ -154,7 +173,7 @@ int main() {
 	//game_stats_01();
 	//game_stats_02();
 	//game_stats_03();
-	lost_fortune();
+	//lost_fortune();
 
 	return 0;
 }
