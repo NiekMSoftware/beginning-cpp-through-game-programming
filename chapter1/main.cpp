@@ -177,6 +177,31 @@ static void exercise_02() {
 	cout << "Seven divided by three is " << 7.0 / 3.0 << endl;  // will also still return a floating point literal
 }
 
+static void exercise_03() {
+	// write a program that gets three game scores from the user and displays the average
+
+	using std::cout;
+	using std::cin;
+
+	// support floating point literals
+	double score1, score2, score3;
+	double totalScore;
+
+	cout << "Please enter a score: ";
+	cin >> score1;
+
+	cout << "Please enter a second score: ";
+	cin >> score2;
+
+	cout << "Please enter a third score: ";
+	cin >> score3;
+
+	totalScore = score1 + score2 + score3;
+
+	cout << "The total score is: " << totalScore;
+	cout << "\nThe average of your score is: " << ((score1 + score2 + score3) / 3) << ".\n";
+}
+
 int main() {
 	//game_over();
 	//expensive_calculator();
@@ -184,6 +209,7 @@ int main() {
 	//game_stats_02();
 	//game_stats_03();
 	//lost_fortune();
+	exercise_03();
 
 	return 0;
 }
