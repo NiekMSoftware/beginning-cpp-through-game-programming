@@ -29,7 +29,20 @@ void using_if_statement() {
 	}
 }
 
+void score_rater_02() {
+	int score;
+	cout << "Enter your score: ";
+	cin >> score;
+
+	if (score >= 1000) {
+		cout << "You scored 1000 or more. Impressive!\n";
+	} else {
+		cout << "You scored less than 1000.\n";
+	}
+}
+
 int main() {
-	using_if_statement();
+	//using_if_statement();
+	//score_rater_02();
 	return 0;
 }
