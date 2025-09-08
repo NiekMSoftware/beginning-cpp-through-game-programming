@@ -209,7 +209,6 @@ int main() {
 	//game_stats_02();
 	//game_stats_03();
 	//lost_fortune();
-	exercise_03();
 
 	return 0;
 }
